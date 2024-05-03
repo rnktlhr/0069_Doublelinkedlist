@@ -110,5 +110,14 @@ bool listempty(){
 }
 
 void trevese(){
-    
+    if(listempty())
+        cout << "\nList is emptyt" << endl;
+    else{
+        cout <<"\nRecords id=s ascending order of roll number are: " << endl;
+        Node *currentNode =START;
+        while (currentNode != NULL){
+            cout << currentNode->noMhs << " " << currentNode->name << endl;
+            currentNode = currentNode->next;
+        }
+    }
 }
