@@ -24,7 +24,7 @@ void addNode(){
             cout << "\033[31Duplicate roll numbers not allowed\033[0m" << endl;
             return;
         }
-       newNode->next =START;
+       newNode->next = START;
        if(START != NULL){
          START->prev = newNode;
        }
@@ -67,10 +67,7 @@ bool search(int rollNo, Node **previous, Node **current){
 }
 
 void deleteNode(){
-    Node *previous, *currunt;
+    Node *previous, *current;
     int rollNo;
-
-    cout << "\nEnter the roll number of the student whose record is to be delete: ";
-    cin >> rollNo;
-    
+   
 }
