@@ -77,5 +77,14 @@ void deleteNode(){
 
    current = START;
    previous = NULL;
-   
+
+   while(current != NULL && current->noMhs != rollNo){
+    previous = current;
+    current = current->next;
+   }
+
+   if(current == START){
+    cout << "\003[31mThe record with roll number " << rollNo << "not found\033[0m" << endl;
+    return;
+   }
 }
