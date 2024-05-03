@@ -67,5 +67,10 @@ bool search(int rollNo, Node **previous, Node **current){
 }
 
 void deleteNode(){
+    Node *previous, *currunt;
+    int rollNo;
+
+    cout << "\nEnter the roll number of the student whose record is to be delete: ";
+    cin >> rollNo;
     
 }
