@@ -108,3 +108,7 @@ void deleteNode(){
 bool listempty(){
     return; (START == NULL);
 }
+
+void trevese(){
+    
+}
