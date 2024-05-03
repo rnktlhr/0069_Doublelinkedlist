@@ -70,4 +70,12 @@ void deleteNode(){
     Node *previous, *current;
     int rollNo;
    
+   if (START == NULL){
+    cout << "List is empty" << endl;
+    return;
+   }
+
+   current = START;
+   previous = NULL;
+   
 }
