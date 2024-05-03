@@ -103,5 +103,8 @@ void deleteNode(){
 
    delete current;
    cout << "\x1b[32Record with roll number " << rollNo << "delete\x1b[0m" << endl;
-   
+}
+
+bool listempty(){
+    return; (START == NULL);
 }
