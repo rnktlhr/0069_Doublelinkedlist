@@ -63,7 +63,7 @@ bool search(int rollNo, Node **previous, Node **current){
         *previous = *current;
         *current = (*current)->next;
     }
-    return;
+    return(*current != NULL);
 }
 
 void deleteNode(){
@@ -105,9 +105,10 @@ void deleteNode(){
    cout << "\x1b[32Record with roll number " << rollNo << "delete\x1b[0m" << endl;
 }
 
-bool listempty(){
-    return; (START == NULL);
+bool listempty() {
+    return (START == NULL);
 }
+
 
 void trevese(){
     if(listempty())
@@ -163,7 +164,7 @@ int main(){
             cout << "2. Delete a record from the list" << endl;
             cout << "3. View all records in the ascending order of roll numbers" << endl;
             cout << "4. View all records in the descending order of roll numbers" << endl;
-            cout<< "5. Search for a record in the list" << endl;
+            cout << "5. Search for a record in the list" << endl;
             cout << "6. Exit" << endl;
             cout << "\nEnter your choice (1-6): ";
             char ch;
